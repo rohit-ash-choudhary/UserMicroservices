@@ -32,6 +32,15 @@ public class User {
     private  String about;
 
 
+
+    public List<Rating> getRating() {
+        return rating;
+    }
+
+    public void setRating(List<Rating> rating) {
+        this.rating = rating;
+    }
+
     @Transient
     private List<Rating>  rating=new ArrayList<>();
     public void setUser_id(String user_id) {
